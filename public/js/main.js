@@ -1,4 +1,3 @@
-console.log("qq");
 // Dropdown menu
 document.addEventListener('DOMContentLoaded', function() {
     const dropdownMenus = document.querySelectorAll('.dropdown-menu');
@@ -251,3 +250,14 @@ loadMoreButton.addEventListener('click', function() {
 
     xhr.send(jsonData);
 });
+
+
+
+/* Бургер меню */
+let headerMenuButton = document.querySelector('.navigate__burger-lines');
+let headerMenu = document.querySelector('.navigate__burger-menu');
+let navigation = document.querySelector('.navigate');
+headerMenuButton.addEventListener('click', function(){
+	headerMenu.classList.toggle('active');
+    headerMenuButton.classList.toggle('active');
+})
